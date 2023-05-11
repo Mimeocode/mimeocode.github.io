@@ -2,48 +2,99 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Modern Webpage Example</title>
+
+
+    <title>MimeoCode</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-content">
+        <div class="content-wrapper">
+            <header>
+                <div class="parent-div">
+                    <div class="child-div"><h1 class="title">&lt;MimeoCode&gt;</h1>
+                    <div class="child-div"> <h2 class="sub-title">Your one-stop solution for tailored code plagiarism Reports</h2></div>
+                </div>
+            </header>
 
-    <section id="hero">
-        <h1>Welcome to our Modern Webpage!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
-        <a href="#" class="btn">Learn More</a>
-    </section>
 
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="feature">
-            <i class="fa fa-globe"></i>
-            <h3>Global Reach</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="feature">
-            <i class="fa fa-cogs"></i>
-            <h3>Advanced Technology</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="feature">
-            <i class="fa fa-users"></i>
-            <h3>Community Support</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </section>
+            <section id="hero">
+                <div class="parent-div">
+                    <div class="fixed-child-div">
+                        <div style="width:100%;flex-basis: 80%;">
+                            We offer a plagiarism checking service for coding assignments and jupyter notebooks.
+                            Our approaches will be tailored to your need and work for all generally used programming languages.
+                            If you have questions or want to assess whether MimeoCode`s service is right for you contact us below!
+                        </div>
+                        <div class="bottom_div"><a href="#" class="btn" id="popup-trigger" onclick="openPopup()">Contact Us</a></div>
 
-    <footer>
-        <p>&copy; 2023 Modern Webpage. All rights reserved.</p>
-    </footer>
+                    </div>
+                    <div class="child-div"></div>
+                </div>
+                <div class="desc-bin">
+
+                </div>
+
+
+            </section>
+            <!--
+            <section id="features">
+                <h2>Key Features</h2>
+                <div class="feature">
+                    <i class="fa fa-globe"></i>
+                    <h3>Global Reach</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-cogs"></i>
+                    <h3>Advanced Technology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </section>
+            -->
+        </div>
+        <footer>
+            <p>&copy; 2023 MimeoCode. All rights reserved.</p>
+        </footer>
+    </div>
+    <div id="popup-overlay">
+        <div id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 class="popup-title">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name*:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message*:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn" id="btn-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
