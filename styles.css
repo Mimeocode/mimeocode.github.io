@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#features {
+    padding: 50px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature i {
+    font-size: 48px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
