@@ -3138,12 +3138,25 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 	}
-
-
+	.spotlight-wide h3 {
+		color:  #525252;
+	}
 
 	.spotlight-wide .content {
 		flex: 1 0 100%;
+		text-align: center !important;
 	}
+
+	.spotlight-wide p{
+		color:  #525252;
+		width: 100%;
+		padding-left: 3em;
+		padding-right: 3em;
+		/*text-align: center !important;*/
+		
+		
+	}
+
 
 		.spotlight-wide .content > :last-child {
 			margin-bottom: 0;
@@ -3178,22 +3191,26 @@ input, select, textarea {
 
 @media screen and (max-width: 736px) and (orientation: portrait) {
 
-	.spotlight {
+	.spotlight-wide {
 		-moz-flex-direction: column !important;
 		-webkit-flex-direction: column !important;
 		-ms-flex-direction: column !important;
 		flex-direction: column !important;
 	}
 
-		.spotlight .image {
+		.spotlight-wide .image {
 			width: 100%;
 			max-width: 60%;
 			margin: 0 0 2em 0 !important;
 		}
 
-		.spotlight .content {
+		.spotlight-wide .content {
 			width: 100%;
 			text-align: center !important;
+		}
+		.spotlight-wide p{
+			color:  #525252;
+			width: 100%;
 		}
 
 }
