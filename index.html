@@ -18,10 +18,11 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="content">
+					<!--<img src="images\mc-logo-nobg.png">-->
 					<h1><a href="#">&lt;MimeoCode&gt;</a></h1>
 					<p>Your One-Stop Solution For Tailored Code-Plagiarism Reports</p>
 					<ul class="actions">
-						<li><a href="#" class="button primary icon solid fa-mail-bulk" onclick=openContactForm()>Contact</a></li>
+						<li><a href="#" class="button primary icon solid fa-mail-bulk" onclick=openContactForm()>Contact Us</a></li>
 						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
@@ -34,8 +35,18 @@
 					<h2>We offer a plagiarism checking service for coding assignments and jupyter notebooks.<br/>
 						Our approaches will be tailored to your need and work for all generally used programming languages.</h2>
 				</header>
+				<!--
+				<div class="image-container">
+					<img src="images/logos/rlog.png" alt="Image 1">
+					<img src="images/logos/rlog.png" alt="Image 2">
+					<img src="images/logos/rlog.png" alt="Image 3">
+					<img src="images/logos/rlog.png" alt="Image 4">
+					<img src="images/logos/rlog.png" alt="Image 5">
+					<img src="images/logos/rlog.png" alt="Image 6">
+				  </div>
+				-->
 				<ul class="icons major">
-					<li><img class="icons" src="images/logos/collage_nobg.png" width="60%" alt="programming languages logos"/></li>
+					<li style="font-size: 1em;"><img class="icons" src="images/logos/collage_nobg.png" width="60%" alt="programming languages logos"/>.. and more</li>
 				</ul>
 			</section>
 
@@ -63,6 +74,7 @@
 							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
 						</div>
 					</section>
+					<!--
 					<section class="special">
 						<ul class="icons labeled">
 							<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
@@ -72,6 +84,7 @@
 							<li><span class="icon solid fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
 						</ul>
 					</section>
+					-->
 				</div>
 			</section>
 
@@ -413,33 +426,40 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<span class="close-popup" onclick="closeContactForm()">&times;</span>
 				<h2>Contact Form</h2>
 				<form action="https://formspree.io/f/mrgvdpwq" method="POST">
+					<!--
 					<div class="form-row">
 						<label for="name">Name:
 							<input type="text" id="name" name="name" required>
 						</label>
 					</div>
-
+					-->	
 					<div class="form-row">
-						<label for="email">Email:
+						<label for="email">Email: <span style="color: red;">*</span>
 							<input type="email" id="email" name="email" required>
 						</label>
 					</div>
-
+					<!--
 					<div class="form-row">
-						<label for="position">Position:
+						<label for="position">Position: (Professor/ TA)
 							<input type="text" id="position" name="position" required>
 						</label>
 					</div>
-
+					-->
 					<div class="form-row">
-						<label for="course">Course:
+						<label for="course">Course name: <span style="color: red;">*</span>
 							<input type="text" id="course" name="course" required>
 						</label>
 					</div>
 
 					<div class="form-row">
-						<label for="message">Message:
-							<textarea id="message" name="message" rows="4" required></textarea>
+						<label for="course">Assignment format: (Jupyter notebook/Python/C++/...) <span style="color: red;">*</span>
+							<input type="text" id="course" name="course" required>
+						</label>
+					</div>
+
+					<div class="form-row">
+						<label for="message">Notes: (optional) 
+							<textarea id="message" name="message" rows="4"></textarea>
 						</label>
 					</div>
 
