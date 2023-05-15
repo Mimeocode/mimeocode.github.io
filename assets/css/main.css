@@ -2513,7 +2513,7 @@ input, select, textarea {
 	.image-wide img {
 		/*border-radius: 6px;*/
 		/*display: inline-block;*/
-		width: 30%; 
+		width: 100%; 
 	}
 	.image-wide.left, .image.right {
 		max-width: 70%; /*edited*/
