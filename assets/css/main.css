@@ -2919,13 +2919,13 @@ input, select, textarea {
 
 	}
 
-/* Spotlight */
+/* Spotlight WIDE */
 
 .spotlight.wide {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex;
+	display: block;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -2943,14 +2943,14 @@ input, select, textarea {
 		.spotlight.wide .image img {
 			display: inline;
 			border-radius: 100%;
-			width: 100%;
+			width: 20%;
 		}
 
-	.spotlight .content {
+	.spotlight.wide .content {
 		width: 70%;
 	}
 
-		.spotlight .content > :last-child {
+		.spotlight.wide .content > :last-child {
 			margin-bottom: 0;
 		}
 
