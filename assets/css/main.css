@@ -2365,15 +2365,15 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 6px;
+		/*border-radius: 6px;*/
 		border: 0;
 		display: inline-block;
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 
 		.image img {
-			border-radius: 6px;
+			/*border-radius: 6px;*/
 			display: block;
 		}
 
@@ -2500,143 +2500,144 @@ input, select, textarea {
 				border-color: #e6e6e6;
 			}
 
-/* Image */
+/* Image WIDE*/
 
-.image.wide {
-	border-radius: 6px;
+.image-wide {
+	/*border-radius: 6px;*/
 	border: 0;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
+	display: inline;
+	/*position: relative;*/
+
 }
 
-	.image img {
-		border-radius: 6px;
-		display: block;
+	.image-wide img {
+		/*border-radius: 6px;*/
+		/*display: inline-block;*/
+		width: 30%; 
 	}
-
-	.image.left, .image.right {
-		max-width: 40%;
+	.image-wide.left, .image.right {
+		max-width: 70%; /*edited*/
 	}
-
-		.image.left img, .image.right img {
+	.image-wide.left img, .image.right img {
 			width: 100%;
 		}
 
-	.image.left {
+	.image-wide.left {
 		float: left;
 		margin: 0 1.5em 1em 0;
 		top: 0.25em;
 	}
 
-	.image.right {
+	.image-wide.right {
 		float: right;
 		margin: 0 0 1em 1.5em;
 		top: 0.25em;
 	}
 
-	.image.fit {
+	.image-wide.fit {
 		display: block;
 		margin: 0 0 2em 0;
 		width: 100%;
 	}
 
-		.image.fit img {
+	.image-wide.fit img {
 			width: 100%;
 		}
 
-	.image.main {
+	.image-wide.main {
 		display: block;
 		margin: 0 0 3em 0;
 		width: 100%;
 	}
 
-		.image.main img {
+		.image-wide.main img {
 			width: 100%;
 		}
 
-	.image.phone {
+	.image-wide.phone {
 		box-shadow: none;
 		border-radius: 0;
 		margin: 0 0 3em 0;
 		width: 13em;
 	}
 
-		.image.phone img {
+		.image-wide.phone img {
 			border-radius: 0;
 			display: block;
 			position: relative;
 			width: 100%;
 		}
 
-		.image.phone .inner, .image.phone:before, .image.phone:after {
+		.image-wide.phone .inner, .image-wide.phone:before, .image-wide.phone:after {
 			display: block;
-			border: solid 2px rgba(255, 255, 255, 0.25);
+			border: solid 2px rgba(0, 255, 0, 0.5);
 		}
 
-		.image.phone .inner {
+		.image-wide.phone .inner {
 			position: relative;
 		}
 
-			.image.phone .inner:before, .image.phone .inner:after {
+		.image-wide.phone .inner:before, .image-wide.phone .inner:after {
 				content: '';
 				position: absolute;
 				left: 50%;
 			}
 
-			.image.phone .inner:before {
+			.image-wide.phone .inner:before {
 				top: -1.375em;
 				margin-left: -1em;
 				width: 2em;
 				height: 0.25em;
 				border-radius: 0.5em;
-				background: rgba(255, 255, 255, 0.25);
+				background: rgba(0, 255, 0, 0.5);
 			}
 
-			.image.phone .inner:after {
+			.image-wide.phone .inner:after {
 				bottom: -2.75em;
 				margin-left: -1em;
 				width: 2em;
 				height: 2em;
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.25);
+				border: solid 2px rgba(0, 255, 0, 0.5);
 			}
 
-		.image.phone:before, .image.phone:after {
+			.image-wide.phone:before, .image-wide.phone:after {
 			content: '';
 		}
 
-		.image.phone:before {
+		.image-wide.phone:before {
 			height: 2.5em;
 			border-radius: 1em 1em 0 0;
 			border-bottom: 0;
 		}
 
-		.image.phone:after {
+		.image-wide.phone:after {
 			height: 3.5em;
 			border-radius: 0 0 1em 1em;
 			border-top: 0;
 		}
 
-.image.wide {
-	box-shadow: 0 0 0 4px #ff0000, 0 0 0 5px #e6e6e6;
-}
+	.image-wide {
+		box-shadow: 0 0 0 0px #ff0000, 0 0 0 0px #0011ff; /*border = 0px*/
+	}
 
-	.image.phone {
+	.image-wide.phone {
 		box-shadow: none;
 	}
 
-		.image.phone .inner, .image.phone:before, .image.phone:after {
-			border-color: #e6e6e6;
+		.image-wide.phone .inner, .image-wide.phone:before, .image-wide.phone:after {
+			border-color: #ff00bb;
 		}
 
-		.image.phone .inner:before {
-			background: #e6e6e6;
+		.image-wide.phone .inner:before {
+			background: #6700ba;
 		}
 
-		.image.phone .inner:after {
-			border-color: #e6e6e6;
+		.image-wide.phone .inner:after {
+			border-color: #c9b200;
 		}
+
+
 /* end image wide*/
 
 
@@ -3061,11 +3062,11 @@ input, select, textarea {
 
 /* Spotlight WIDE */
 
-.spotlight.wide {
+.spotlight-wide {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: block;
+	display: inline;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3073,24 +3074,25 @@ input, select, textarea {
 	margin: 0 0 2em 0;
 }
 
-	.spotlight.wide .image {
+	.spotlight-wide .image {
 		width: 30%;
 		border-radius: 100%;
 		margin: 0 3em 0 0;
 		display: inline;
 	}
 
-		.spotlight.wide .image img {
+		.spotlight-wide .image img {
 			display: inline;
 			border-radius: 100%;
-			width: 20%;
+			width: 100%;
+			height: 20%; /*ignores this lol*/
 		}
 
-	.spotlight.wide .content {
+	.spotlight-wide .content {
 		width: 70%;
 	}
 
-		.spotlight.wide .content > :last-child {
+		.spotlight-wide .content > :last-child {
 			margin-bottom: 0;
 		}
 
