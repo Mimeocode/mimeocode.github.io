@@ -98,10 +98,10 @@ input, select, textarea {
 	width: calc(400px + 20%);
 	overflow: scroll;
 	@media (max-width: 767px) {
-		width: 95%;
+		width:95%;
 	  }
 	@media (max-height: 640px) {
-		height: 95%;
+		height:95%;
 	  }
 	
 }
