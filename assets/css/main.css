@@ -2836,6 +2836,19 @@ input, select, textarea {
 		}
 
 /* Spotlight */
+	#graph-spotlight {
+		background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%,rgba(255,255,255, 0.35) 40%,  rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%), url('images/graph_cropped.png');
+		background-size: contain;
+		width: 100%;
+	}
+
+	#report-spotlight {
+		background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%,rgba(255,255,255, 0.8) 50%,  rgba(255,255,255,0.35) 60%, rgba(255,255,255,0) 100%), url('images/report_templ.png');;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+		width: 100%;
+	}
 
 	.spotlight {
 		display: -moz-flex;
@@ -2846,8 +2859,16 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		margin: 0 0 2em 0;
+		padding: 0 0 2em 0;
 	}
+		.spotlight h3 {
+			color:  #525252;
+		}
+
+		.spotlight p{
+			color:  #525252;
+			width: 70%;
+		}
 
 		.spotlight .image {
 			width: 30%;
@@ -2879,6 +2900,10 @@ input, select, textarea {
 
 			.spotlight:nth-child(2n) .image {
 				margin: 0 0 0 3em;
+			}
+
+			.spotlight:nth-child(2n) p{
+				float: right;
 			}
 
 			.spotlight:nth-child(2n) .content {
@@ -3112,9 +3137,9 @@ input, select, textarea {
 
 			.wrapper > .inner.alt > * {
 				border-top: solid 2px #eeeeee;
-				margin-bottom: 0;
-				margin-top: 3em;
-				padding-top: 3em;
+				padding-top: 1.5em;
+				padding-bottom: 1.5em;
+
 			}
 
 				.wrapper > .inner.alt > *:first-child {
