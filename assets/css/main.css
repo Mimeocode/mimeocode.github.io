@@ -85,7 +85,7 @@ input, select, textarea {
 	z-index: 999;
 	display: none;
 	backdrop-filter: blur(5px);
-	max-width: 100%;
+
 }
 
 .popup-content {
@@ -99,10 +99,10 @@ input, select, textarea {
 	width: calc(400px + 20%);
 	overflow: scroll;
 	@media (max-width: 767px) {
-		width:95%;
+		max-width:95%;
 	  }
 	@media (max-height: 640px) {
-		height:95%;
+		max-height:95%;
 	  }
 	
 }
